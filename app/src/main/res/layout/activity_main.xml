@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+
         <variable name="user" type="com.example.myandroidarchitecturesample.pojos.User"/>
     </data>
 
@@ -14,8 +15,8 @@
             android:layout_marginBottom="8dp">
 
         <Button
+                android:layout_margin="20dp"
                 android:textSize="20sp"
-                android:layout_marginTop="8dp"
                 android:layout_alignBaseline="@id/userNametextView"
                 android:layout_toEndOf="@id/userNametextView"
                 android:text="Button"
@@ -23,8 +24,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/button2"/>
         <TextView
+                android:textColor="@color/colorTextDark"
+                android:layout_margin="20dp"
                 android:textSize="20sp"
-                android:layout_marginTop="8dp"
                 android:text="@{user.firstName}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

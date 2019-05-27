@@ -1,9 +1,9 @@
 package com.example.myandroidarchitecturesample.pojos
 
-import java.io.Serializable
+import androidx.databinding.ObservableField
 
-data class User(
-    val id: Int? = null,
-    val firstName: String? = null,
-    val lastName: String? = null
-) : Serializable
+class User {
+    var id = ObservableField<Int>()
+    var firstName = ObservableField<String>()
+    var lastName = ObservableField<String>()
+}
